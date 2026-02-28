@@ -4,7 +4,7 @@ import currencyLogo from "./assets/Currency-logo.png";
 
 function App() {
   return (
-    <div className="max-w-9/12 mx-auto">
+    <div className="max-w-full lg:max-w-9/12 mx-auto">
       <div className="navbar bg-base-100 shadow-sm">
         <div className="flex-1">
           <img className="w-15 h-15" src={logoImg} alt="" />
