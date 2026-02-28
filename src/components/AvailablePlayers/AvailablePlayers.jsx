@@ -6,9 +6,11 @@ const AvailablePlayers = ({
   loadPlayers,
   setAvailableBalance,
   availableBalance,
+  purchasedPlayers,
+  setPurchasedPlayers,
 }) => {
   const players = use(loadPlayers);
-  console.log(players);
+
   return (
     <div className="max-w-full lg:max-w-9/12 mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -18,6 +20,8 @@ const AvailablePlayers = ({
             player={player}
             setAvailableBalance={setAvailableBalance}
             availableBalance={availableBalance}
+            purchasedPlayers={purchasedPlayers}
+            setPurchasedPlayers={setPurchasedPlayers}
           ></AvailablePlayer>
         ))}
       </div>

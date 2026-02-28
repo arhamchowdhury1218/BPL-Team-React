@@ -14,6 +14,7 @@ const loadPlayers = fetchPlayers();
 function App() {
   const [toggle, setToggleState] = useState(true);
   const [availableBalance, setAvailableBalance] = useState(6000000);
+  const [purchasedPlayers, setPurchasedPlayers] = useState([]);
   return (
     <div>
       <Navbar availableBalance={availableBalance}></Navbar>
@@ -45,13 +46,15 @@ function App() {
           }
         >
           <AvailablePlayers
+            purchasedPlayers={purchasedPlayers}
+            setPurchasedPlayers={setPurchasedPlayers}
             setAvailableBalance={setAvailableBalance}
             availableBalance={availableBalance}
             loadPlayers={loadPlayers}
           ></AvailablePlayers>
         </Suspense>
       ) : (
-        <SelectedPlayers></SelectedPlayers>
+        <SelectedPlayers purchasedPlayers={purchasedPlayers}></SelectedPlayers>
       )}
     </div>
   );

@@ -1,8 +1,13 @@
 import playerIcon from "../../assets/player-icon.png";
 import flagIcon from "../../assets/flag-icon.png";
 import { useState } from "react";
-const AvailablePlayer = ({ player, setAvailableBalance, availableBalance }) => {
-  console.log(player);
+const AvailablePlayer = ({
+  player,
+  setAvailableBalance,
+  availableBalance,
+  purchasedPlayers,
+  setPurchasedPlayers,
+}) => {
   const {
     id,
     battingStyle,
@@ -16,12 +21,14 @@ const AvailablePlayer = ({ player, setAvailableBalance, availableBalance }) => {
   } = player;
   const [isSelected, setIsSelected] = useState(false);
   const handleAvailableBalance = (playerData) => {
+    console.log(playerData);
     if (availableBalance < playerData.price) {
       alert("hahaha");
       return;
     }
     setIsSelected(true);
     setAvailableBalance(availableBalance - playerData.price);
+    setPurchasedPlayers([...purchasedPlayers, playerData]);
   };
   return (
     <div>
