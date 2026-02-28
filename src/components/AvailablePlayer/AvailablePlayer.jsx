@@ -1,6 +1,7 @@
 import playerIcon from "../../assets/player-icon.png";
 import flagIcon from "../../assets/flag-icon.png";
-const AvailablePlayer = ({ player }) => {
+import { useState } from "react";
+const AvailablePlayer = ({ player, setAvailableBalance, availableBalance }) => {
   console.log(player);
   const {
     id,
@@ -13,6 +14,15 @@ const AvailablePlayer = ({ player }) => {
     rating,
     role,
   } = player;
+  const [isSelected, setIsSelected] = useState(false);
+  const handleAvailableBalance = (playerData) => {
+    if (availableBalance < playerData.price) {
+      alert("hahaha");
+      return;
+    }
+    setIsSelected(true);
+    setAvailableBalance(availableBalance - playerData.price);
+  };
   return (
     <div>
       <div className="card bg-base-100 w-96 shadow-sm p-4">
@@ -49,7 +59,13 @@ const AvailablePlayer = ({ player }) => {
 
           <div className="flex justify-between items-center mt-4">
             <h2 className="text-black font-semibold">Price: ${price}</h2>
-            <button className="btn btn-primary">Choose Player</button>
+            <button
+              disabled={isSelected}
+              onClick={() => handleAvailableBalance(player)}
+              className="btn btn-primary"
+            >
+              {isSelected === true ? "Selected" : "Choose Player"}
+            </button>
           </div>
 
           <div className="card-actions justify-end"></div>
