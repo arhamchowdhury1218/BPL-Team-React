@@ -7,7 +7,6 @@ const AvailablePlayers = ({ loadPlayers }) => {
   console.log(players);
   return (
     <div className="max-w-full lg:max-w-9/12 mx-auto">
-      <h1>AvailablePlayers</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {players.map((player) => (
           <AvailablePlayer key={player.id} player={player}></AvailablePlayer>
