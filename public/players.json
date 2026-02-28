@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "playerName": "Babar Azam",
+    "country": "Pakistan",
+    "playerImage": "https://i.ibb.co.com/R44dhKdX/AP24168508782733-1718613360.webp",
+    "role": "Batsman",
+    "battingStyle": "Right-hand Batsman",
+    "bowlingStyle": "Right-arm Off Break",
+    "rating": 95,
+    "price": 1200000
+  },
+  {
+    "id": 2,
+    "playerName": "Shaheen Shah Afridi",
+    "country": "Pakistan",
+    "playerImage": "https://i.ibb.co.com/277L73rL/637-camedia.png",
+    "role": "Bowler",
+    "battingStyle": "Left-hand Batsman",
+    "bowlingStyle": "Left-arm Fast",
+    "rating": 94,
+    "price": 1150000
+  },
+  {
+    "id": 3,
+    "playerName": "Kane Williamson",
+    "country": "New Zealand",
+    "playerImage": "https://i.ibb.co.com/b5xKwv9Q/Whats-App-Image-2024-07-26-at-01-30-29.webp",
+    "role": "Batsman",
+    "battingStyle": "Right-hand Batsman",
+    "bowlingStyle": "Right-arm Off Spin",
+    "rating": 94,
+    "price": 1250000
+  },
+  {
+    "id": 4,
+    "playerName": "Trent Boult",
+    "country": "New Zealand",
+    "playerImage": "https://i.ibb.co.com/0RRj9Zg8/Trent-Boult-bowling-action.jpg",
+    "role": "Bowler",
+    "battingStyle": "Right-hand Batsman",
+    "bowlingStyle": "Left-arm Fast Medium",
+    "rating": 92,
+    "price": 1100000
+  },
+  {
+    "id": 5,
+    "playerName": "Joe Root",
+    "country": "England",
+    "playerImage": "https://i.ibb.co.com/Fbbgwrq2/Joe-Root-HIP1487-cropped.jpg",
+    "role": "Batsman",
+    "battingStyle": "Right-hand Batsman",
+    "bowlingStyle": "Right-arm Off Spin",
+    "rating": 93,
+    "price": 1200000
+  },
+  {
+    "id": 6,
+    "playerName": "Ben Stokes",
+    "country": "England",
+    "playerImage": "https://i.ibb.co.com/60L7TMR3/60783660873ea9455711a937-Th-Ben-Stokes-Celebrates.jpg",
+    "role": "Allrounder",
+    "battingStyle": "Left-hand Batsman",
+    "bowlingStyle": "Right-arm Fast Medium",
+    "rating": 92,
+    "price": 1180000
+  },
+  {
+    "id": 7,
+    "playerName": "David Warner",
+    "country": "Australia",
+    "playerImage": "https://i.ibb.co.com/VcYHxBqc/495ae6d0-908c-11ef-a624-634f82a66078.jpg",
+    "role": "Batsman",
+    "battingStyle": "Left-hand Batsman",
+    "bowlingStyle": "Right-arm Leg Break",
+    "rating": 91,
+    "price": 1130000
+  },
+  {
+    "id": 8,
+    "playerName": "Pat Cummins",
+    "country": "Australia",
+    "playerImage": "https://i.ibb.co.com/BV4Ld239/2292.webp",
+    "role": "Bowler",
+    "battingStyle": "Right-hand Batsman",
+    "bowlingStyle": "Right-arm Fast",
+    "rating": 94,
+    "price": 1250000
+  },
+  {
+    "id": 9,
+    "playerName": "Quinton de Kock",
+    "country": "South Africa",
+    "playerImage": "https://i.ibb.co.com/C3qpVSVL/Quinton-de-Kock.png",
+    "role": "Batsman",
+    "battingStyle": "Left-hand Batsman",
+    "bowlingStyle": "Right-arm Medium",
+    "rating": 90,
+    "price": 1120000
+  },
+  {
+    "id": 10,
+    "playerName": "Kagiso Rabada",
+    "country": "South Africa",
+    "playerImage": "https://i.ibb.co.com/6cGv9drz/278d1830-29ab-11f0-a252-f789f44e224b.jpg",
+    "role": "Bowler",
+    "battingStyle": "Left-hand Batsman",
+    "bowlingStyle": "Right-arm Fast",
+    "rating": 94,
+    "price": 1230000
+  },
+  {
+    "id": 11,
+    "playerName": "Nathan Lyon",
+    "country": "Australia",
+    "playerImage": "https://i.ibb.co.com/gbcvptXh/Nathan-Lyon-shines-with-the-ball-in-the-Wellington-Test-vs-New-Zealand.webp",
+    "role": "Allrounder",
+    "battingStyle": "Left-hand Batsman",
+    "bowlingStyle": "Left-arm Orthodox Spin",
+    "rating": 93,
+    "price": 1190000
+  },
+  {
+    "id": 12,
+    "playerName": "Nicholas Pooran",
+    "country": "West Indies",
+    "playerImage": "https://i.ibb.co.com/TBKQWKtk/pooran-last-played-for-west-indies-in-december-2024.webp",
+    "role": "Batsman",
+    "battingStyle": "Left-hand Batsman",
+    "bowlingStyle": "Right-arm Off Spin",
+    "rating": 89,
+    "price": 1080000
+  }
+]
