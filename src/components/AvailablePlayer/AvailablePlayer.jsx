@@ -34,6 +34,7 @@ const AvailablePlayer = ({
     setIsSelected(true);
     setAvailableBalance(availableBalance - playerData.price);
     setPurchasedPlayers([...purchasedPlayers, playerData]);
+    toast("Player Selected");
   };
   return (
     <div>

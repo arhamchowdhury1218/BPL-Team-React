@@ -1,6 +1,7 @@
 import { Suspense, use, useState } from "react";
 import "./App.css";
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
+import Banner from "./components/Banner/Banner";
 import { ToastContainer } from "react-toastify";
 
 import Navbar from "./components/Navbar/Navbar";
@@ -27,6 +28,7 @@ function App() {
   return (
     <div>
       <Navbar availableBalance={availableBalance}></Navbar>
+      <Banner></Banner>
       <div className="max-w-full md:max-w-9/12 mx-auto my-10 p-3">
         <div className="flex justify-between items-center font-bold">
           <h1 className="text-xl md:text-2xl">
