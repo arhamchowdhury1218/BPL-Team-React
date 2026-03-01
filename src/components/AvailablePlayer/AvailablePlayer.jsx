@@ -1,6 +1,7 @@
 import playerIcon from "../../assets/player-icon.png";
 import flagIcon from "../../assets/flag-icon.png";
 import { useState } from "react";
+import { toast } from "react-toastify";
 const AvailablePlayer = ({
   player,
   setAvailableBalance,
@@ -23,7 +24,11 @@ const AvailablePlayer = ({
   const handleAvailableBalance = (playerData) => {
     console.log(playerData);
     if (availableBalance < playerData.price) {
-      alert("hahaha");
+      toast("Insufficient Balance");
+      return;
+    }
+    if (purchasedPlayers.length === 6) {
+      toast("Maximum number of players have been selected");
       return;
     }
     setIsSelected(true);

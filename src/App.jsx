@@ -1,6 +1,7 @@
 import { Suspense, use, useState } from "react";
 import "./App.css";
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
+import { ToastContainer } from "react-toastify";
 
 import Navbar from "./components/Navbar/Navbar";
 import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
@@ -13,7 +14,7 @@ const fetchPlayers = async () => {
 const loadPlayers = fetchPlayers();
 function App() {
   const [toggle, setToggleState] = useState(true);
-  const [availableBalance, setAvailableBalance] = useState(6000000);
+  const [availableBalance, setAvailableBalance] = useState(600000000);
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
   const removeSelectedPlayers = (removedPlayer) => {
     console.log(removedPlayer);
@@ -71,6 +72,7 @@ function App() {
           purchasedPlayers={purchasedPlayers}
         ></SelectedPlayers>
       )}
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
