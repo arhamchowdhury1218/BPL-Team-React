@@ -2,7 +2,7 @@ import React from "react";
 
 const SubscribeSection = () => {
   return (
-    <div className="relative -mb-40 z-10 mt-40">
+    <div className="relative -mb-40 z-10 mt-20">
       <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-100 via-white to-orange-200 rounded-3xl p-10 shadow-xl text-center border border-gray-200">
         <h2 className="text-3xl font-bold mb-3">Subscribe to our Newsletter</h2>
 
