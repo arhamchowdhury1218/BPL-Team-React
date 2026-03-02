@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar/Navbar";
 import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
 import Footer from "./components/Footer/Footer";
+import SubscribeSection from "./components/SubscribeSection/SubscribeSection";
 
 const fetchPlayers = async () => {
   const response = await fetch("/players.json");
@@ -76,6 +77,7 @@ function App() {
         ></SelectedPlayers>
       )}
       <ToastContainer></ToastContainer>
+      <SubscribeSection></SubscribeSection>
       <Footer></Footer>
     </div>
   );

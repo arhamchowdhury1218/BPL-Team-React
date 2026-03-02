@@ -8,7 +8,7 @@ const Footer = () => {
         <img
           src="https://i.ibb.co.com/QFNqzYBD/logo-footer.png"
           alt="Logo"
-          className="h-40"
+          className="h-40 mt-10"
         />
       </div>
 
